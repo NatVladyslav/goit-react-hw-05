@@ -1,0 +1,22 @@
+.header{
+    background-color: aqua;
+    padding: 20px;
+}
+.navList{
+    display: flex;
+    gap: 20px;
+}
+.link{
+    border-radius: 30px;
+    padding: 10px;
+    width: 80px;
+    background-color: whitesmoke;
+    color: darkblue;
+    text-align: center;
+}
+.active{
+    background-color: deepskyblue;
+    border-color: blue;
+    transition: all 0.7s;
+    color: black;
+}
