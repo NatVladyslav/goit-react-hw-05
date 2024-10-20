@@ -1,10 +1,9 @@
-import { Routes, Route, NavLink } from "react-router-dom";
-import clsx from "clsx";
+import { NavLink } from 'react-router-dom';
+import clsx from 'clsx';
 
-import HomePage from "../../pages/HomePage/HomePage";
-import MoviesPage from "../../pages/MoviesPage/MoviesPage";
+import css from './Navigation.module.css';
 
-import css from "./Navigation.module.css"
+import Container from '../Container/Container';
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
@@ -12,17 +11,19 @@ const buildLinkClass = ({ isActive }) => {
 
 const Navigation = () => {
   return (
-    <header className={css.header}>
-          <nav className={css.navList}>
-              <NavLink to="/" className={buildLinkClass}>Home</NavLink>
-              <NavLink to="/movies" className={buildLinkClass}>Movies</NavLink>
-         </nav>
-      <Routes>
-              <Route path="/" element={<HomePage/>}>Home</Route>
-              <Route path="/movies" element={<MoviesPage/>}>Movies</Route>
-      </Routes>
-    </header>
-  )
-}
+    <Container>
+      <header className={css.header}>
+        <nav className={css.navList}>
+          <NavLink to="/" className={buildLinkClass}>
+            Home
+          </NavLink>
+          <NavLink to="/movies" className={buildLinkClass}>
+            Movies
+          </NavLink>
+        </nav>
+      </header>
+    </Container>
+  );
+};
 
-export default Navigation
+export default Navigation;
