@@ -1,0 +1,22 @@
+.movieCard {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.imgDiv {
+  min-width: 200px;
+  max-width: 250px;
+}
+.img {
+  width: 100%;
+}
+.score {
+  margin-bottom: 10px;
+}
+.overview {
+  margin-bottom: 10px;
+}
+.movieGenres {
+  display: flex;
+  gap: 10px;
+}
