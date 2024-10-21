@@ -1,7 +1,16 @@
-.movieCard {
+.card {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   margin-bottom: 20px;
+}
+.text {
+  width: 500px;
+}
+.title {
+  margin-bottom: 10px;
+}
+.subtitle {
+  margin-bottom: 10px;
 }
 .imgDiv {
   min-width: 200px;

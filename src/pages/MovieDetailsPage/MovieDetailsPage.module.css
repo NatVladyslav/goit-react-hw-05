@@ -4,6 +4,9 @@
 .link {
   padding: 10px 30px;
   transition: background-color 0.3s ease;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
 .link:hover {
@@ -17,8 +20,10 @@
 .backLink {
   width: fit-content;
   padding: 10px 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
+  border-radius: 20px;
+  border: 1px solid gray;
   align-items: center;
   gap: 10px;
   transition: background-color 0.3s ease;

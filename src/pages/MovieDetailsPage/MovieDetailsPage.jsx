@@ -11,6 +11,7 @@ import {
   Link,
 } from 'react-router-dom';
 import { IoChevronBackCircleOutline } from 'react-icons/io5';
+import { IconContext } from 'react-icons';
 
 import Section from '../../components/Section/Section';
 import Container from '../../components/Container/Container';
@@ -51,7 +52,9 @@ const MovieDetailsPage = () => {
     <Section>
       <Container>
         <Link className={css.backLink} to={backLinkRef.current}>
-          <IoChevronBackCircleOutline />
+          <IconContext.Provider value={{ color: 'gray', size: 30 }}>
+            <IoChevronBackCircleOutline />
+          </IconContext.Provider>
           Back
         </Link>
         {loader && <Loader />}

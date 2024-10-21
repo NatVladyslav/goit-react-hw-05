@@ -1,11 +1,10 @@
 import css from './MovieDetails.module.css';
 
-const defaultImg =
-  'https://www.europosters.com.ua/marketplace/funny-cat-scary-v160242?material=vlies';
+const defaultImg = 'https://geek.hellyer.kiwi/files/2017/06/cat-404.jpg';
 
 const MovieDetails = ({ movie }) => {
   return (
-    <div className={css.movieСard}>
+    <div className={css.card}>
       <div className={css.imgDiv}>
         <img
           className={css.img}
