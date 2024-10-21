@@ -30,11 +30,8 @@
 .button {
   height: 100%;
   border: none;
-  border-radius: 0 5px 5px 0;
-  background-color: var(--color-blue);
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 .button:hover {
-  opacity: 0.7;
+  scale: 1.04;
 }
