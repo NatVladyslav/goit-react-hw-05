@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { TbSearch } from 'react-icons/tb';
+import { IconContext } from 'react-icons';
 
 import css from './Form.module.css';
 
@@ -31,7 +33,11 @@ const Form = ({ getSearchQuery, prevValue }) => {
           placeholder="Enter film's name ..."
         />
         <button className={css.button} type="submit">
-          Search
+          <IconContext.Provider
+            value={{ color: '#55883B', size: 35, className: 'submitIcon' }}
+          >
+            <TbSearch />
+          </IconContext.Provider>
         </button>
       </form>
       <Toaster />

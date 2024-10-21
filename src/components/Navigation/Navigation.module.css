@@ -15,6 +15,10 @@
   background-color: whitesmoke;
   color: darkblue;
   text-align: center;
+  transition: all 400ms ease-in-out;
+}
+.link:hover {
+  scale: 1.03;
 }
 .active {
   background-color: rgb(169, 238, 247);

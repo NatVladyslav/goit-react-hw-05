@@ -36,23 +36,26 @@ const MovieCast = () => {
       {loader && <Loader />}
       {error && <NotFoundPage title={error} />}
       {cast && (
-        <ul className={css.castList}>
-          {cast.map(({ cast_id, name, profile_path, character }) => (
-            <li className={css.listItem} key={cast_id}>
-              <img
-                src={
-                  profile_path
-                    ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                    : defaultImg
-                }
-                alt={name}
-                width={100}
-              />
-              <h3>{name}</h3>
-              <p>Character: {character}</p>
-            </li>
-          ))}
-        </ul>
+        <>
+          <h1></h1>
+          <ul className={css.castList}>
+            {cast.map(({ cast_id, name, profile_path, character }) => (
+              <li className={css.listItem} key={cast_id}>
+                <img
+                  src={
+                    profile_path
+                      ? `https://image.tmdb.org/t/p/w500${profile_path}`
+                      : defaultImg
+                  }
+                  alt={name}
+                  width={100}
+                />
+                <h3>{name}</h3>
+                <p>Character: {character}</p>
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </div>
   );
